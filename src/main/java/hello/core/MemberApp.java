@@ -16,7 +16,7 @@ public class MemberApp {
 
         //ApplicationContext = 스프링 컨테이너
         ApplicationContext applicationContext = new AnnotationConfigApplicationContext(AppConfig.class);
-        applicationContext.getBean("memberService", MemberService.class);
+        MemberService memberService = applicationContext.getBean("memberService", MemberService.class);
 
         Member member = new Member(1L, "memberA", Grade.VIP);
         memberService.join(member);

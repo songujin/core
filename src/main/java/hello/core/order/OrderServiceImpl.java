@@ -32,7 +32,6 @@ public class OrderServiceImpl implements OrderService {
     //4. 일반 메서드 주입
 //    @Autowired
 //    public void init(MemberRepository memberRepository, DiscountPolicy discountPolicy) {
-//        // 1. 생정자 주입
 //        System.out.println("1. OrderServiceImpl");
 //        this.memberRepository = memberRepository;
 //        this.discountPolicy = discountPolicy;

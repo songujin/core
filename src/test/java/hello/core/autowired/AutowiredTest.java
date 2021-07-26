@@ -21,7 +21,7 @@ public class AutowiredTest {
         //Member는 스프링 빈이 아니다
         @Autowired(required = false)
         public void setNoBean1(Member noBean1) {
-            System.out.println("noBean1 = " + noBean1);
+            System.out.println("noBean1  = " + noBean1);
         }
 
         @Autowired

@@ -40,7 +40,7 @@ public class OrderServiceImpl implements OrderService {
 //    }
 
     @Autowired //생성자 한개면 생략 가능
-    public OrderServiceImpl(MemberRepository memberRepository, @Qualifier("mainDiscountPolicy") DiscountPolicy discountPolicy) {
+    public OrderServiceImpl(MemberRepository memberRepository, @MainDiscountPolicy DiscountPolicy discountPolicy) {
         // 1. 생정자 주입
         System.out.println("1. OrderServiceImpl");
         this.memberRepository = memberRepository;
